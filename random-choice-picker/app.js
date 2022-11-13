@@ -3,7 +3,13 @@ const textarea = document.getElementById("textarea");
 textarea.focus();
 textarea.addEventListener("keyup", (e) => {
   createTags(e.target.value);
-  randomSelect();
+  if (e.key === "Enter") {
+    setTimeout(() => {
+      e.target.value = "";
+    }, 10);
+
+    randomSelect();
+  }
 });
 
 function createTags(input) {
