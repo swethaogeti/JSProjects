@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo apps</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="task-input">
+        <i class="fa fa-bars"></i>
+        <input type="text" placeholder="Add a new task" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">completed </span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box">
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" />
+            <p>Renew gym membership</p>
+          </label>
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+
+            <ul class="task-menu">
+              <li><i class="uil uil-pen">Edit</i></li>
+              <li class="uil uil-trash">Delete</li>
+            </ul>
+          </div>
+        </li>
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" />
+            <p>Renew gym membership</p>
+          </label>
+
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+          </div>
+        </li>
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" />
+            <p>Renew gym membership</p>
+          </label>
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+          </div>
+        </li>
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" />
+            <p>Renew gym membership</p>
+          </label>
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+          </div>
+        </li>
+        <li class="task">
+          <label for="1">
+            <input type="checkbox" />
+            <p>Renew gym membership</p>
+          </label>
+          <div class="setting">
+            <i class="uil uil-ellipsis-h"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
