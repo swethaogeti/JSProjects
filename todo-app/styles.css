@@ -18,6 +18,8 @@ body {
   background-color: white;
   border-radius: 7px;
   padding: 28px 0;
+  overflow: scroll;
+  height: 400px;
 }
 
 .task-input {
@@ -103,6 +105,10 @@ li {
   margin-right: 12px;
 }
 
+.task label p.checked {
+  text-decoration: line-through;
+}
+
 .task .setting {
   cursor: pointer;
   position: relative;
@@ -121,7 +127,7 @@ li {
   transition: transform 0.2s ease;
 }
 
-.setting:hover .task-menu {
+.setting .task-menu.show {
   transform: scale(1);
 }
 .task-menu li {
