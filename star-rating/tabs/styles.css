@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .tabs {
+  display: flex;
+}
+.container .tabs h3 {
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container .tab-content {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.tabs .active {
+  background-color: rgb(200, 200, 247);
+}
+
+.tab-content div {
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
+}
